@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    list-style:none;
+    text-decoration: none;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width:100%;
+    height: 100%;
+
+}
+.navbar{
+    width:100%;
+    height:60px;
+    background: #9972bf;
+}
+.navbar > ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    position: relative;
+
+}
+.navbar ul li a{
+    display: block;
+    color: white;
+    width:180px;
+    height: 60px;
+    text-align: center;
+    padding: 20px 15px;
+    letter-spacing: 2px;
+    transition: all 0.2s ease;
+}
+.navbar ul  li> a{
+    margin-right: 1px;
+}
+.navbar ul li a .icon{
+    width: 25px;
+    display: inline-block;
+}
+.navbar ul li a:hover,
+.navbar ul li a.active,
+.navbar .ddmenu ul li a:hover,
+.navbar .ddmenu ul li a.active{
+    background-color: green;
+}
+.navbar .ddmenu{
+    position:absolute; 
+    top:0;
+    left:0;
+    display: none;
+
+}
+.ddmenu ul li a{
+    width:180px;
+    background-color:#9972bf;
+    text-align: left;
+    padding: 20px 20px;
+}
+.navbar ul li a.first.active + .ddmenu{
+    display: block;
+}
+
+.sixthsec{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sixsub1{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:calc( 33.33% - 50px );
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.sixsub2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:calc( 33.33% - 50px );
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.sixsub3{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width:calc( 33.33% - 47px );
+    padding-left: 30px;
+    padding-top: 17px;
+}
+.img3{
+    width:100%;
+    height: 150px;
+}
+.h3tag{
+    font-size: 25px;
+    font-weight: 800;
+    padding:20px 15px ;
+}
+.para{
+    font-size: 18px;
+    font-weight:500;
+    padding: 20px 25px;
+    width: 100%;
+}
+.read{
+    color: green;
+    font-weight: 600;
+    margin-left: 15px;
+}
+.center{
+    font-size: 40px;
+}
+.fourthsec{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+}
+.fifthsec{
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 50px 0;
+}
+.img2{
+    width:50%;
+    height: 320px;
+    margin-left: 40px;
+}
+.responsive{
+    display: none;
+}
+@media (max-width: 800px) {
+    
+   
+
+    .h3tag{
+        font-size: 25px;
+        font-weight: 800;
+        padding:20px 15px ;
+        width:calc( 100% - 70px );
+    
+    }
+    .sixthsec{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sixsub1{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width:calc( 100% - 50px );
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .sixsub2{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width:calc( 100% - 50px );
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .sixsub3{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        width:calc( 100% - 47px );
+        padding-left: 30px;
+        padding-top: 17px;
+    }
+    .fifthsec{
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+    }
+    .img2{
+        width:100%;
+        height: 250px;
+        margin: 0;
+    }
+    .para{
+        font-size: 18px;
+        font-weight:500;
+        padding: 10px 10px;
+        width:calc( 100% - 40px ); 
+        margin: 0;
+    }
+
+}
